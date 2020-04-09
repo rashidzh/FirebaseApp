@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>829419573156-gqog7qpi3d85neo6e0n3o7qbkc4l6p67.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.829419573156-gqog7qpi3d85neo6e0n3o7qbkc4l6p67</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB6juODsUdJ4tnpXLskhPdv_pnY8e5rOjE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>829419573156</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>AppDev.firestoredemo</string>
+	<key>PROJECT_ID</key>
+	<string>fir-demo-afb9d</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fir-demo-afb9d.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:829419573156:ios:f2bbb423b661563b85bb31</string>
+	<key>DATABASE_URL</key>
+	<string>https://fir-demo-afb9d.firebaseio.com</string>
+</dict>
+</plist>
