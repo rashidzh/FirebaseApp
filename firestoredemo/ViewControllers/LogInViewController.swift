@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
 
 class LogInViewController: UIViewController {
 
@@ -44,10 +46,61 @@ class LogInViewController: UIViewController {
     }
     */
     
+    func validateText() -> String? {
+        //Function to check to see if all fields are filled
+        if  emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+            return "Please fill in the all fields."
+        }
+        //Check to see if password follows the rules
+
+        
+        return nil
+    }
+    
+    func showError(_ message: String) {
+        //Display error function
+        errorLabel.text = message
+        errorLabel.alpha = 1
+    }
+    
+    func transitionToOrigin (){
+        //Instantiate a view controller with the name from "Constants.Storyboard.homeViewController" as a HomeViewController type.
+        let ViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.ViewController) as? ViewController
+
+        //Set the root view controller to the newly instantiated View controller
+        view.window?.rootViewController = ViewController
+        //Set the new rootViewController as the visible one.
+        view.window?.makeKeyAndVisible()
+
+    }
+    
+    func transitionToHome (){
+        //Instantiate a view controller with the name from "Constants.Storyboard.homeViewController" as a HomeViewController type.
+        let HomeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
+        //Set the root view controller to the newly instantiated View controller
+        view.window?.rootViewController = HomeViewController
+        //Set the new rootViewController as the visible one.
+        view.window?.makeKeyAndVisible()
+    }
+    
     @IBAction func logInTapped(_ sender: Any) {
+        
+        let emailText = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let passwordText = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        Auth.auth().signIn(withEmail: emailText, password: passwordText) { (Result, Err) in
+            if Err != nil {
+                //If there is an error signing up, display the error to the user
+                self.showError(Err!.localizedDescription)
+            }
+            else {
+                //Transition to home screen
+                self.transitionToHome()
+        }
+    }
     }
     
     @IBAction func cancelTapped(_ sender: Any) {
+        transitionToOrigin()
     }
     
 }

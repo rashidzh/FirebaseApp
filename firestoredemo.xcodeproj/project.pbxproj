@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36102AD2243FEB5300BCA2BE /* loginbg.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 36102AD1243FEB5300BCA2BE /* loginbg.mp4 */; };
 		36372FB9243CC80800B37B97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36372FB8243CC80800B37B97 /* AppDelegate.swift */; };
 		36372FBB243CC80800B37B97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36372FBA243CC80800B37B97 /* SceneDelegate.swift */; };
 		36372FBD243CC80800B37B97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36372FBC243CC80800B37B97 /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		0F8B1CAA1FB22E52D9FCA33E /* Pods_firestoredemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_firestoredemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36102AD1243FEB5300BCA2BE /* loginbg.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = loginbg.mp4; sourceTree = "<group>"; };
 		36372FB5243CC80800B37B97 /* firestoredemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firestoredemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36372FB8243CC80800B37B97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36372FBA243CC80800B37B97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,9 +56,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36102AD3243FEB5F00BCA2BE /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				36102AD1243FEB5300BCA2BE /* loginbg.mp4 */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
 		36372FAC243CC80800B37B97 = {
 			isa = PBXGroup;
 			children = (
+				36102AD3243FEB5F00BCA2BE /* Media */,
 				36372FB7243CC80800B37B97 /* firestoredemo */,
 				36372FB6243CC80800B37B97 /* Products */,
 				6788EE005F0FEB4D8F6A50C2 /* Pods */,
@@ -186,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36372FC5243CC80E00B37B97 /* LaunchScreen.storyboard in Resources */,
+				36102AD2243FEB5300BCA2BE /* loginbg.mp4 in Resources */,
 				36372FCD243CC92B00B37B97 /* GoogleService-Info.plist in Resources */,
 				36372FC2243CC80E00B37B97 /* Assets.xcassets in Resources */,
 				36372FC0243CC80800B37B97 /* Main.storyboard in Resources */,
